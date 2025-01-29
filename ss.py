@@ -4,7 +4,11 @@ from PIL import Image, ImageDraw, ImageFont
 from io import BytesIO
 import textwrap
 import random
-
+# Set page title and emoji icon (must be first Streamlit command)
+st.set_page_config(
+    page_title="Todo Wallpaper Generator",
+    page_icon="🎯",  # Checkmark + framed picture emojis
+)
 # Function to load fonts safely
 def load_font(size):
     try:
