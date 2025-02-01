@@ -56,7 +56,7 @@ def draw_attribution(draw, font, img, img_width, img_height):
 # Function to generate wallpaper with todos
 def generate_wallpaper_with_todos(todos):
     # Get random wallpaper (1920x1080)
-    response = requests.get("https://picsum.photos/1920/1080")
+    response = requests.get("https://picsum.photos/2560/1440")
     img = Image.open(BytesIO(response.content))
     draw = ImageDraw.Draw(img)
     
